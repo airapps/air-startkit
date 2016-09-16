@@ -1,0 +1,32 @@
+{
+  "name": "air-startkit",
+  "version": "1.0.0",
+  "description": "Air App Start Kit",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airapps/air-startkit.git"
+  },
+  "keywords": [
+    "React",
+    "Native",
+    "Air",
+    "App",
+    "Start",
+    "Kit"
+  ],
+  "author": "buhe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/airapps/air-startkit/issues"
+  },
+  "homepage": "https://github.com/airapps/air-startkit#readme",
+  "dependencies": {
+    "air-umeng": "^1.0.0",
+    "react": "^15.3.1",
+    "react-native": "^0.33.0"
+  }
+}
