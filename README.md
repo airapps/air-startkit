@@ -13,5 +13,6 @@ AirApps 是一个什么项目？AirApps 本质上是一个基于 React Native �
 - 推送 API 支持
 - 七牛直播云支持
 - 完整的 UI Component、可以直接构建漂亮的界面
+- redux 和 Navigation 脚手架
 
 ##和 Hybird 平台有什么不同？
