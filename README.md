@@ -1,5 +1,7 @@
 # AirApps StartKit
 
+![AirApps](./logo2.png)
+
 AirApps 是一个什么项目？AirApps 本质上是一个基于 React Native 的可扩展的浏览器，她能渲染 React Native 语法，并提供内建的本土化扩展和 Air Extension 。
 
 ##和 React Native 有什么不同？

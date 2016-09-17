@@ -36,4 +36,4 @@ const styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('AirApps', () => AirApps);
+AppRegistry.registerComponent('AirKit', () => AirApps);
