@@ -7,24 +7,38 @@ import React, {
 } from 'react';
 import {
     StyleSheet,
-    Text,
-    View,
     AppRegistry,
     Dimensions
 } from 'react-native';
 
-import Umeng from 'air-umeng';
+import {
+    Heading,
+    View,
+    Tile,
+    Text,
+    Title,
+    Subtitle,
+    Caption,
+    Icon,
+    Overlay,
+    Button,
+    TextInput,
+    NavigationBar,
+    Screen,
+    ListView,
+    Row,
+    Divider
+} from '@shoutem/ui';
+
+import App from './App';
 
 class AirApps extends Component {
   constructor() {
     super();
-    Umeng.startWithAppkey('55894b6d67e58e66c5000d6d');
   }
 
   render() {
-    return <View style={styles.container}>
-              <Text>Hello AirApps</Text>
-            </View>
+    return <App />
   }
 }
 const styles = StyleSheet.create({
