@@ -9,10 +9,9 @@ import {
     StyleSheet,
     AppRegistry,
     Dimensions,
-    ScrollView
-} from 'react-native';
-
-import { connect } from 'react-redux';
+    ScrollView,
+    ActivityIndicatorIOS,
+} from 'react-native'
 
 import {
     Actions,
@@ -40,17 +39,23 @@ import {
 
 var {height, width} = Dimensions.get('window');
 
+import { connect } from 'react-redux';
+
+import { rooms } from '../actions/rooms';
+
 class RoomsView extends Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props);
+    props.fetchRooms();
+    console.log(props.rooms);
   }
 
   render() {
     return (<Screen style={{marginTop:70}}>
       <ScrollView>
         <ListView
-            data={['App1','App2','App3','App4','App5','App6','App1','App2','App3','App4','App5','App6']}
+            data={this.props.rooms.data}
             //loading={false}
             //onLoadMore={...}
             //onRefresh={...}
@@ -71,8 +76,19 @@ class RoomsView extends Component {
             //style={...}
             />
       </ScrollView>
+      <Button styleName="dark clear"
+              onPress={()=>{Actions.stream()}}
+              style={{position:'absolute',top:height - (10 + 70 + 40),right:10}}>
+        <Icon name="add-friend"/>
+      </Button>
     </Screen>)
   }
 }
 
-export default connect(({routes}) => ({routes}))(RoomsView);
+function bindAction(dispatch) {
+  return {
+    fetchRooms: () => dispatch(rooms()),
+  }
+}
+
+export default connect(({routes,rooms}) => ({routes,rooms}), bindAction)(RoomsView);

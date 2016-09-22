@@ -13,9 +13,11 @@ import {
 
 import { combineReducers } from 'redux';
 import routes from './routes';
+import rooms from './rooms';
 // ... other reducers
 
 export default combineReducers({
   routes,
+  rooms
   // ... other reducers
 });

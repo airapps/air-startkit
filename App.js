@@ -29,6 +29,7 @@ const RouterWithRedux = connect()(Router);
 
 import RoomsView from './components/RoomsView';
 import RoomView from './components/RoomView';
+import StreamingView from './components/StreamingView';
 
 import {
     NavigationBar,
@@ -52,6 +53,7 @@ class App extends Component {
             <Scene key="root" navBar={()=>{return  <NavigationBar centerComponent={<Title>Living</Title>}/>}}>
               <Scene key="rooms" component={RoomsView} initial/>
               <Scene key="room" component={RoomView}/>
+              <Scene key="stream" component={StreamingView}/>
             </Scene>
           </RouterWithRedux>
         </Provider>
