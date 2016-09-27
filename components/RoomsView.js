@@ -43,6 +43,8 @@ import { connect } from 'react-redux';
 
 import { rooms } from '../actions/rooms';
 
+//import BG from '../images/bg';
+
 class RoomsView extends Component {
 
   constructor(props) {
@@ -68,7 +70,8 @@ class RoomsView extends Component {
                                           //styleName="small rounded-corners"
                                           source={{ uri: 'http://shoutem.github.io/img/ui-toolkit/examples/image-2.png' }}
                                         >
-                                        <Button styleName="dark" onPress={()=>{Actions.room({})}}><Icon name="play"/></Button>
+                                          <Button styleName="dark" onPress={()=>{Actions.room({item:item})}}><Icon name="play"/></Button>
+                                          <Subtitle numberOfLines={2}>{item.title}</Subtitle>
                                         </Image>
                                       </View>
                                   )}}
@@ -76,11 +79,6 @@ class RoomsView extends Component {
             //style={...}
             />
       </ScrollView>
-      <Button styleName="dark clear"
-              onPress={()=>{Actions.stream()}}
-              style={{position:'absolute',top:height - (10 + 70 + 40),right:10}}>
-        <Icon name="add-friend"/>
-      </Button>
     </Screen>)
   }
 }

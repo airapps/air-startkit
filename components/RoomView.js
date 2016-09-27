@@ -24,15 +24,15 @@ import Pili, {
 var {height, width} = Dimensions.get('window');
 
 class RoomView extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
     return <View>
               <Player
                   source={{
-                        uri:"rtmp://live.hkstv.hk.lxdns.com/live/hks",
+                        uri:this.props.item.play.ORIGIN,
                         //uri:"rtmp://pili-live-rtmp.pilitest.qiniucdn.com/pilitest/buhe",
                         //controller: true,
                         timeout: 10 * 1000,
@@ -41,7 +41,8 @@ class RoomView extends Component {
                       }}
                   started={true}
                   style={{
-                        height:height,
+                        marginTop:70,
+                        height:height - 70,
                         width:width,
                         flex:1
                       }}
