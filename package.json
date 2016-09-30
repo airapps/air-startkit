@@ -25,8 +25,10 @@
   },
   "homepage": "https://github.com/airapps/air-startkit#readme",
   "dependencies": {
+    "air-amap": "^0.4.0",
     "air-umeng": "^1.0.0",
     "react": "^15.3.1",
-    "react-native": "^0.33.0"
+    "react-native": "^0.33.0",
+    "react-native-svg": "^4.3.1"
   }
 }

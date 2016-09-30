@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 
 import Umeng from 'air-umeng';
+import Mapcase from './mapcase';
 
 class AirApps extends Component {
   constructor() {
@@ -22,9 +23,7 @@ class AirApps extends Component {
   }
 
   render() {
-    return <View style={styles.container}>
-              <Text>Hello AirApps</Text>
-            </View>
+    return <Mapcase />
   }
 }
 const styles = StyleSheet.create({

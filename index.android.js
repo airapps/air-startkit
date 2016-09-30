@@ -15,6 +15,8 @@ import {
 
 import Umeng from 'air-umeng';
 
+import Mapcase from './mapcase';
+
 class AirApps extends Component {
   constructor() {
     super();
@@ -22,9 +24,7 @@ class AirApps extends Component {
   }
 
   render() {
-    return <View style={styles.container}>
-              <Text>Hello AirApps</Text>
-            </View>
+    return <Mapcase />
   }
 }
 const styles = StyleSheet.create({
