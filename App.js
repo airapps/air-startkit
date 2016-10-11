@@ -63,7 +63,7 @@ class App extends Component {
                        navBar={()=>{return  (
                                              <NavigationBar
                                                 centerComponent={<Title>Living</Title>}
-                                                rightComponent={<Button onPress={() =>{Actions.title()}}><Icon name="add-friend" /></Button>}
+                                                rightComponent={<Button onPress={() =>{Actions.stream()}}><Icon name="add-friend" /></Button>}
                                                 />
                                           )
                      }}

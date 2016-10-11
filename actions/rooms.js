@@ -6,7 +6,7 @@ export const CREATE_ROOM_DATA = "CREATE_ROOM_DATA";
 export const FETCH_ROOMS_DATA = "FETCH_ROOMS_DATA";
 export const DELETE_ROOM_DATA = "DELETE_ROOM_DATA";
 
-import {BASE_URL} from './ActionConst';
+import {BASE_URL} from './actionConst';
 
 export function rooms() {
   return (dispatch, getState) => {
